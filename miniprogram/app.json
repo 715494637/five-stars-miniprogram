@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/packages/packages",
+    "pages/monetization/monetization",
+    "pages/students/students",
+    "pages/contact/contact"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "五星国际唱片",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#FDFBF7"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {}
+}

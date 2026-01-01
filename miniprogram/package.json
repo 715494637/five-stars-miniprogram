@@ -1,0 +1,20 @@
+{
+  "name": "five-stars-miniprogram",
+  "version": "1.0.0",
+  "description": "五星国际唱片小程序",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "miniprogram",
+    "wechat"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/wechat-miniprogram": "^3.4.7",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/packages/packages",
+    "pages/monetization/monetization",
+    "pages/students/students",
+    "pages/contact/contact"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "五星国际唱片",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#FDFBF7"
+  },
+  "tabBar": {
+    "color": "#9CA3AF",
+    "selectedColor": "#B49B67",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/packages/packages",
+        "text": "档位",
+        "iconPath": "images/tabbar/package.png",
+        "selectedIconPath": "images/tabbar/package-active.png"
+      },
+      {
+        "pagePath": "pages/monetization/monetization",
+        "text": "变现",
+        "iconPath": "images/tabbar/monetization.png",
+        "selectedIconPath": "images/tabbar/monetization-active.png"
+      },
+      {
+        "pagePath": "pages/students/students",
+        "text": "学员",
+        "iconPath": "images/tabbar/students.png",
+        "selectedIconPath": "images/tabbar/students-active.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系",
+        "iconPath": "images/tabbar/contact.png",
+        "selectedIconPath": "images/tabbar/contact-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {}
+}

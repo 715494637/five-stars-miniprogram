@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "孵化档位",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "package-card": "/components/package-card/package-card",
+    "custom-tabbar": "/components/custom-tabbar/custom-tabbar"
+  }
+}

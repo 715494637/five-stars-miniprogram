@@ -1,0 +1,264 @@
+/* 全局样式 - 五星国际唱片小程序 */
+
+/* CSS变量定义 */
+page {
+  --gold-primary: #B49B67;
+  --gold-light: #F59E0B;
+  --bg-warm: #FDFBF7;
+  --bg-gray: #F3F4F6;
+  --bg-white: #FFFFFF;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --text-light: #9CA3AF;
+  --border-color: #E5E7EB;
+
+  background-color: var(--bg-warm);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 28rpx;
+  line-height: 1.6;
+}
+
+/* 间距系统 */
+.m-xs { margin: 16rpx; }
+.m-sm { margin: 24rpx; }
+.m-md { margin: 32rpx; }
+.m-lg { margin: 48rpx; }
+.m-xl { margin: 64rpx; }
+
+.mt-xs { margin-top: 16rpx; }
+.mt-sm { margin-top: 24rpx; }
+.mt-md { margin-top: 32rpx; }
+.mt-lg { margin-top: 48rpx; }
+.mt-xl { margin-top: 64rpx; }
+
+.mb-xs { margin-bottom: 16rpx; }
+.mb-sm { margin-bottom: 24rpx; }
+.mb-md { margin-bottom: 32rpx; }
+.mb-lg { margin-bottom: 48rpx; }
+.mb-xl { margin-bottom: 64rpx; }
+
+.p-xs { padding: 16rpx; }
+.p-sm { padding: 24rpx; }
+.p-md { padding: 32rpx; }
+.p-lg { padding: 48rpx; }
+.p-xl { padding: 64rpx; }
+
+/* 文字颜色 */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-light { color: var(--text-light); }
+.text-gold { color: var(--gold-primary); }
+
+/* 文字大小 */
+.text-xs { font-size: 24rpx; }
+.text-sm { font-size: 28rpx; }
+.text-base { font-size: 32rpx; }
+.text-lg { font-size: 36rpx; }
+.text-xl { font-size: 40rpx; }
+.text-2xl { font-size: 48rpx; }
+
+/* 文字粗细 */
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+/* 圆角 */
+.rounded-sm { border-radius: 16rpx; }
+.rounded-md { border-radius: 24rpx; }
+.rounded-lg { border-radius: 32rpx; }
+.rounded-xl { border-radius: 48rpx; }
+.rounded-full { border-radius: 9999rpx; }
+
+/* 阴影 */
+.shadow-sm { box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05); }
+.shadow-md { box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.08); }
+.shadow-lg { box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.12); }
+
+/* 背景 */
+.bg-white { background-color: var(--bg-white); }
+.bg-gray { background-color: var(--bg-gray); }
+.bg-warm { background-color: var(--bg-warm); }
+.bg-gold { background-color: var(--gold-primary); }
+
+/* Flex布局 */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-1 { flex: 1; }
+
+/* 文本对齐 */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* 容器 */
+.container {
+  padding: 32rpx;
+  max-width: 750rpx;
+  margin: 0 auto;
+}
+
+/* 卡片 */
+.card {
+  background-color: var(--bg-white);
+  border-radius: 24rpx;
+  padding: 32rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
+}
+
+/* 按钮 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24rpx 48rpx;
+  border-radius: 9999rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #1F2937;
+  color: #FFFFFF;
+}
+
+.btn-primary:active {
+  background-color: #374151;
+}
+
+.btn-gold {
+  background-color: var(--gold-primary);
+  color: #FFFFFF;
+}
+
+.btn-gold:active {
+  background-color: #D4AF37;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2rpx solid var(--gold-primary);
+  color: var(--gold-primary);
+}
+
+.btn-outline:active {
+  background-color: rgba(180, 155, 103, 0.1);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* 分割线 */
+.divider {
+  height: 1rpx;
+  background-color: var(--border-color);
+  margin: 32rpx 0;
+}
+
+/* 徽章 */
+.badge {
+  display: inline-block;
+  padding: 8rpx 16rpx;
+  border-radius: 9999rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+}
+
+.badge-gold {
+  background-color: rgba(180, 155, 103, 0.1);
+  color: var(--gold-primary);
+}
+
+.badge-green {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+}
+
+/* 列表项 */
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid var(--border-color);
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+/* 图标容器 */
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+  background-color: var(--bg-gray);
+}
+
+/* 标签 */
+.tag {
+  display: inline-block;
+  padding: 8rpx 20rpx;
+  border-radius: 9999rpx;
+  font-size: 24rpx;
+  background-color: var(--bg-gray);
+  color: var(--text-secondary);
+}
+
+.tag-active {
+  background-color: rgba(180, 155, 103, 0.1);
+  color: var(--gold-primary);
+}
+
+/* 动画 */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 滚动容器 */
+.scroll-container {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* 安全区域适配 */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* 清除默认样式 */
+page {
+  box-sizing: border-box;
+}
+
+view, text, button, image, scroll-view {
+  box-sizing: border-box;
+}
+
+button::after {
+  border: none;
+}

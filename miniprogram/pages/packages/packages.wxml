@@ -1,0 +1,70 @@
+<!-- 孵化档位页面 -->
+<view class="page">
+  <!-- 自定义顶部导航栏 -->
+  <view class="custom-navbar">
+  </view>
+
+  <!-- 页面内容 -->
+  <scroll-view class="page-content" scroll-y>
+    <!-- 页面头部 -->
+    <view class="page-header">
+      <text class="page-title">艺人孵化档位</text>
+      <text class="page-desc">透明的阶梯式投入，匹配不同阶段的艺人需求。</text>
+    </view>
+
+    <!-- Tab 切换 -->
+    <scroll-view class="tab-scroll" scroll-x>
+      <view class="tab-container">
+        <view
+          class="tab-item {{currentTab === 'tier1' ? 'active' : ''}}"
+          data-tab="tier1"
+          bindtap="handlePackageTabChange"
+        >
+          <text class="tab-text">基础版 ¥40,000</text>
+        </view>
+        <view
+          class="tab-item {{currentTab === 'tier2' ? 'active' : ''}}"
+          data-tab="tier2"
+          bindtap="handlePackageTabChange"
+        >
+          <text class="tab-text">进阶版 ¥60,000</text>
+        </view>
+        <view
+          class="tab-item {{currentTab === 'tier3' ? 'active' : ''}}"
+          data-tab="tier3"
+          bindtap="handlePackageTabChange"
+        >
+          <text class="tab-text">专业版 ¥80,000</text>
+        </view>
+        <view
+          class="tab-item {{currentTab === 'tier4' ? 'active' : ''}}"
+          data-tab="tier4"
+          bindtap="handlePackageTabChange"
+        >
+          <text class="tab-text">私人订制 >¥80,000</text>
+        </view>
+      </view>
+    </scroll-view>
+
+    <!-- 档位卡片列表 -->
+    <view class="card-list">
+      <package-card
+        id="{{currentPackage.id}}"
+        title="{{currentPackage.title}}"
+        price="{{currentPackage.price}}"
+        desc="{{currentPackage.desc}}"
+        features="{{currentPackage.features}}"
+        highlight="{{currentPackage.highlight}}"
+        bind:select="handlePackageSelect"
+      />
+    </view>
+
+    <!-- 底部说明 -->
+    <view class="footer-note">
+      <text class="note-text">* 所有档位均包含3年全约经纪服务</text>
+    </view>
+  </scroll-view>
+
+  <!-- 自定义底部导航 -->
+  <custom-tabbar activePage="pages/packages/packages" bind:change="handleTabChange" />
+</view>

@@ -1,0 +1,18 @@
+<!-- 联系我们页面 -->
+<view class="page">
+  <!-- 自定义顶部导航栏 -->
+  <view class="custom-navbar">
+  </view>
+
+  <!-- 页面内容 -->
+  <scroll-view class="page-content" scroll-y>
+    <!-- 页面头部 -->
+    <view class="page-header">
+      <text class="page-title">准备好开启您的音乐事业了吗？</text>
+      <text class="page-desc">五星国际唱片，用专业定义行业标准。请联系我们的顾问获取详细的合同条款与定制方案。</text>
+    </view>
+  </scroll-view>
+
+  <!-- 自定义底部导航 -->
+  <custom-tabbar activePage="pages/contact/contact" bind:change="handleTabChange" />
+</view>

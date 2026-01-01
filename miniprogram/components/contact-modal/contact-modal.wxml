@@ -1,0 +1,45 @@
+<!-- 联系方式底部动作面板组件 -->
+<view class="contact-modal {{visible ? 'visible' : ''}}" wx:if="{{visible}}" catchtap="handleMaskTap">
+  <view class="modal-container" catchtap="stopPropagation">
+    <!-- 头部 -->
+    <view class="modal-header">
+      <text class="modal-title">联系我们</text>
+      <view class="close-btn" catchtap="handleClose">
+        <text class="close-icon">×</text>
+      </view>
+    </view>
+
+    <!-- 内容区域 -->
+    <view class="modal-content">
+      <!-- 二维码 -->
+      <view class="qr-section">
+        <image class="qr-image" src="/images/weixin.jpg" mode="aspectFit" />
+        <text class="qr-hint">扫码添加微信客服</text>
+      </view>
+
+      <!-- 按钮组 -->
+      <view class="action-buttons">
+        <button class="action-btn wechat-btn" catchtap="handleCopyWechat">
+          <text class="btn-icon">📱</text>
+          <view class="btn-text">
+            <text class="btn-label">添加微信客服</text>
+            <text class="btn-value">{{wechat}}</text>
+          </view>
+        </button>
+
+        <button class="action-btn phone-btn" catchtap="handleCallPhone">
+          <text class="btn-icon">📞</text>
+          <view class="btn-text">
+            <text class="btn-label">拨打电话</text>
+            <text class="btn-value">{{phone}}</text>
+          </view>
+        </button>
+      </view>
+
+      <!-- 底部提示 -->
+      <view class="modal-footer">
+        <text class="footer-text">工作时间：{{workHours}}</text>
+      </view>
+    </view>
+  </view>
+</view>

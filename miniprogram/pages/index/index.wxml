@@ -1,0 +1,81 @@
+<!-- 首页 -->
+<view class="page">
+  <!-- 自定义顶部导航栏 -->
+  <view class="custom-navbar">
+  </view>
+
+  <!-- 页面内容 -->
+  <scroll-view class="page-content" scroll-y>
+    <!-- Hero Section -->
+    <view class="hero-section">
+      <view class="hero-content">
+        <text class="hero-title">不仅仅是做歌，</text>
+        <text class="hero-title">更是打造<text class="text-gold">商业价值</text></text>
+        <text class="hero-desc">云南洛伊马斯特传媒旗下核心品牌。3年全约孵化，从版权到商演，从制作到法务，我们为您铺就通往顶流的职业道路。</text>
+      </view>
+
+      <!-- 数据统计 -->
+      <view class="stats-container">
+        <view class="stat-item">
+          <text class="stat-value">4<text class="stat-unit">家</text></text>
+          <text class="stat-label">直营分公司</text>
+        </view>
+        <view class="stat-divider"></view>
+        <view class="stat-item">
+          <text class="stat-value">3<text class="stat-unit">年</text></text>
+          <text class="stat-label">全案孵化期</text>
+        </view>
+        <view class="stat-divider"></view>
+        <view class="stat-item">
+          <text class="stat-value">8<text class="stat-unit">人+</text></text>
+          <text class="stat-label">专属团队配置</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 公司实力 -->
+    <view class="section">
+      <view class="section-header">
+        <text class="section-title">全省布局 · 实力见证</text>
+        <text class="section-desc">五星国际唱片扎根云南，四大直营门店构建强大的线下资源网络。</text>
+      </view>
+
+      <view class="location-grid">
+        <view class="location-card" wx:for="{{locations}}" wx:key="id">
+          <text class="location-type">{{item.type}}</text>
+          <text class="location-name">{{item.name}}</text>
+          <text class="location-desc">{{item.desc}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 全案服务 -->
+    <view class="section section-gray">
+      <view class="section-header">
+        <text class="section-title">不仅仅是签约，更是配备一支<text class="text-gold">军队</text></text>
+        <text class="section-desc">我们将为您配备全方位的专业团队，从法律权益保护到音乐灵感激发，每一个环节都有行业专家为您保驾护航。</text>
+      </view>
+
+      <view class="service-list">
+        <view class="service-item" wx:for="{{services}}" wx:key="id">
+          <view class="service-number">{{item.id}}</view>
+          <view class="service-content">
+            <text class="service-name">{{item.name}}</text>
+            <text class="service-desc">{{item.desc}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="team-grid">
+        <view class="team-card" wx:for="{{teamMembers}}" wx:key="id">
+          <text class="team-icon">{{item.icon}}</text>
+          <text class="team-name">{{item.name}}</text>
+          <text class="team-desc">{{item.desc}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 自定义底部导航 -->
+  <custom-tabbar activePage="pages/index/index" bind:change="handleTabChange" />
+</view>

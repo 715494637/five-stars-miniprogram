@@ -1,0 +1,101 @@
+<!-- 商业变现页面 -->
+<view class="page">
+  <!-- 自定义顶部导航栏 -->
+  <view class="custom-navbar">
+  </view>
+
+  <!-- 页面内容 -->
+  <scroll-view class="page-content" scroll-y>
+    <!-- 页面头部 -->
+    <view class="page-header">
+      <text class="page-title">全渠道变现体系</text>
+      <text class="page-desc">我们将流量转化为收益，构建可持续的音乐商业闭环。</text>
+    </view>
+
+    <!-- 收入构成模型 -->
+    <view class="section">
+      <view class="section-header">
+        <view class="section-title-bar"></view>
+        <text class="section-title">收入构成模型</text>
+      </view>
+
+      <view class="chart-container">
+        <view class="donut-chart">
+          <view class="donut-center">
+            <text class="donut-value">100%</text>
+            <text class="donut-label">总收入</text>
+          </view>
+          <view class="donut-legend">
+            <view class="legend-item">
+              <view class="legend-color" style="background-color: #F59E0B;"></view>
+              <text class="legend-text">版税分成 35%</text>
+            </view>
+            <view class="legend-item">
+              <view class="legend-color" style="background-color: #A855F7;"></view>
+              <text class="legend-text">商业演出 25%</text>
+            </view>
+            <view class="legend-item">
+              <view class="legend-color" style="background-color: #3B82F6;"></view>
+              <text class="legend-text">直播打赏 30%</text>
+            </view>
+            <view class="legend-item">
+              <view class="legend-color" style="background-color: #10B981;"></view>
+              <text class="legend-text">广告推广 8%</text>
+            </view>
+            <view class="legend-item">
+              <view class="legend-color" style="background-color: #6B7280;"></view>
+              <text class="legend-text">其他 2%</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="info-cards">
+        <view class="info-card">
+          <text class="info-title">版税分成</text>
+          <text class="info-desc">全网平台播放收益，长尾效应明显</text>
+        </view>
+        <view class="info-card">
+          <text class="info-title">直播带货/打赏</text>
+          <text class="info-desc">高频互动变现，现金流核心</text>
+        </view>
+        <view class="info-card">
+          <text class="info-title">商演/广告</text>
+          <text class="info-desc">品牌溢价变现，提升知名度</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 3年成长路径预测 -->
+    <view class="section section-gray">
+      <view class="section-header">
+        <view class="section-title-bar green"></view>
+        <text class="section-title">3年成长路径预测</text>
+      </view>
+
+      <view class="growth-chart">
+        <view class="growth-bars">
+          <view class="growth-bar" wx:for="{{growthData}}" wx:key="label">
+            <view class="bar-container">
+              <view class="bar-fill" style="height: {{item.height}}%;"></view>
+            </view>
+            <text class="bar-label">{{item.label}}</text>
+            <text class="bar-value">{{item.value}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="growth-desc">
+        <text class="desc-text">基于过往成功案例，艺人在签约后的成长通常呈现指数级趋势。第一年为<text class="highlight">作品积淀期</text>，第二年进入<text class="highlight">流量爆发期</text>，第三年达到<text class="highlight">商业稳定期</text>。</text>
+      </view>
+    </view>
+
+    <!-- 底部说明 -->
+    <view class="footer-note">
+      <text class="note-text">* 以上数据基于公司头部艺人平均表现生成，仅供参考</text>
+    </view>
+  </scroll-view>
+
+  <!-- 自定义底部导航 -->
+  <custom-tabbar activePage="pages/monetization/monetization" bind:change="handleTabChange" />
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商业变现",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "custom-tabbar": "/components/custom-tabbar/custom-tabbar"
+  }
+}

@@ -1,0 +1,19 @@
+<!-- 自定义优雅底部导航组件 -->
+<view class="custom-tabbar">
+  <!-- 导航项列表 -->
+  <view class="tabbar-container">
+    <view
+      class="tab-item {{item.active ? 'active' : ''}}"
+      wx:for="{{tabList}}"
+      wx:key="pagePath"
+      data-index="{{index}}"
+      data-pagePath="{{item.pagePath}}"
+      bindtap="handleTabTap"
+    >
+      <text class="tab-text">{{item.text}}</text>
+    </view>
+  </view>
+
+  <!-- 底部安全区域 -->
+  <view class="safe-area"></view>
+</view>

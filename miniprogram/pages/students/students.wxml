@@ -1,0 +1,31 @@
+<!-- 学员页面（占位） -->
+<view class="page">
+  <!-- 自定义顶部导航栏 -->
+  <view class="custom-navbar">
+  </view>
+
+  <!-- 页面内容 -->
+  <scroll-view class="page-content" scroll-y>
+    <view class="placeholder-container">
+      <!-- 占位图标 -->
+      <view class="placeholder-icon">🎵</view>
+
+      <!-- 占位标题 -->
+      <text class="placeholder-title">敬请期待</text>
+
+      <!-- 占位描述 -->
+      <text class="placeholder-desc">学员展示功能正在开发中</text>
+      <text class="placeholder-subtitle">即将为您呈现更多优秀学员作品和成长故事</text>
+
+      <!-- 装饰元素 -->
+      <view class="placeholder-decoration">
+        <view class="decoration-dot"></view>
+        <view class="decoration-dot"></view>
+        <view class="decoration-dot"></view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 自定义底部导航 -->
+  <custom-tabbar activePage="pages/students/students" bind:change="handleTabChange" />
+</view>
