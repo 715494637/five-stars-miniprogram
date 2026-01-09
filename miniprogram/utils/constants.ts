@@ -26,6 +26,7 @@ export const LOCATIONS = [
     type: 'HEADQUARTERS',
     name: '顺城店（总部）',
     desc: '核心资源调度中心，顶级录音棚配置。',
+    location: '位于昆明CBD市中心',
   },
   {
     id: '2',

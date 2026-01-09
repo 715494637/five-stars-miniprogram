@@ -45,6 +45,7 @@
           <text class="location-type">{{item.type}}</text>
           <text class="location-name">{{item.name}}</text>
           <text class="location-desc">{{item.desc}}</text>
+          <text class="location-location" wx:if="{{item.location}}">{{item.location}}</text>
         </view>
       </view>
     </view>
